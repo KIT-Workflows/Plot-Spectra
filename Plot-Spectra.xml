@@ -1,0 +1,37 @@
+<WaNoTemplate>
+
+	<WaNoMeta>
+ 	    <Author>
+  	        <Name> Tobias Schl&#246;der </Name>
+  		<Email>tobias.schloeder@kit.edu</Email>
+ 	    </Author>
+
+	    <Description>
+   	        This WaNo plots spectra.
+ 	    </Description>
+
+	    <Keyword>Spectrum</Keyword>
+	</WaNoMeta>
+
+	<WaNoRoot name="Settings">
+		<WaNoBool name="Plot IR spectra">True</WaNoBool>
+		<WaNoFile name="IR yml files" logical_filename="ir_result.yml" visibility_condition="%s == True" visibility_var_path="Plot IR spectra" local="True">IR results</WaNoFile>
+		<WaNoBool name="Plot UV/Vis adsorption spectra">True</WaNoBool>
+		<WaNoFile name="Adsorption yml files" logical_filename="ads_result.yml" visibility_condition="%s == True" visibility_var_path="Plot UV/Vis adsorption spectra" local="True">Adsorption results</WaNoFile>
+		<WaNoBool name="Plot UV/Vis emission spectra">True</WaNoBool>
+		<WaNoFile name="Emsission yml files" logical_filename="em_result.yml" visibility_condition="%s == True" visibility_var_path="Plot UV/Vis emission spectra" local="True">Emission results</WaNoFile>
+            	<WaNoBool name="Delete yml files">False</WaNoBool>
+	</WaNoRoot>
+
+	<WaNoExecCommand>
+	export NANOVER=V4
+	source $NANOMATCH/$NANOVER/local_anaconda/bin/activate
+	conda activate simstack_kit
+	python spectrum_plotter.py
+	</WaNoExecCommand>
+	
+	<WaNoInputFiles>
+		<WaNoInputFile logical_filename="spectrum_plotter.py">spectrum_plotter.py</WaNoInputFile>
+	</WaNoInputFiles>
+	
+</WaNoTemplate>
