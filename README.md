@@ -10,7 +10,7 @@ The code is based on python and the necessary virtual environment on the server 
 
 ## Required input
 
-The required input consists DFT spectrum cDFT-Turbomole-Newalculations in the ```turbomole_results.yml``` format of the [DFT-Turbomole WaNO](https://github.com/KIT-Workflows/DFT-Turbomole) (results of othe codes in the same format work as well).
+The required input consists DFT spectrum calculations in the ```results.yml``` format of the [DFT-Turbomole WaNo](https://github.com/KIT-Workflows/DFT-Turbomole) (results of othe codes in the same format work as well).
 
 ## WaNo Settings
 
