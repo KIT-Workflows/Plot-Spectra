@@ -16,8 +16,8 @@
 	<WaNoRoot name="Settings">
 		<WaNoBool name="Plot IR spectra">True</WaNoBool>
 		<WaNoFile name="IR yml files" logical_filename="ir_result.yml" visibility_condition="%s == True" visibility_var_path="Plot IR spectra" local="True">IR results</WaNoFile>
-		<WaNoBool name="Plot UV/Vis adsorption spectra">True</WaNoBool>
-		<WaNoFile name="Adsorption yml files" logical_filename="ads_result.yml" visibility_condition="%s == True" visibility_var_path="Plot UV/Vis adsorption spectra" local="True">Adsorption results</WaNoFile>
+		<WaNoBool name="Plot UV/Vis absorption spectra">True</WaNoBool>
+		<WaNoFile name="Absorption yml files" logical_filename="abs_result.yml" visibility_condition="%s == True" visibility_var_path="Plot UV/Vis absorption spectra" local="True">Absorption results</WaNoFile>
 		<WaNoBool name="Plot UV/Vis emission spectra">True</WaNoBool>
 		<WaNoFile name="Emsission yml files" logical_filename="em_result.yml" visibility_condition="%s == True" visibility_var_path="Plot UV/Vis emission spectra" local="True">Emission results</WaNoFile>
             	<WaNoBool name="Delete yml files">False</WaNoBool>
